@@ -101,6 +101,13 @@ export default class LinkedList<T> {
     }
 
     /**
+    * Wrapper function for elementAtIndex(index), since it is usually the function: get(index)
+    */
+    get(index: number): T {
+        return this.elementAtIndex(index);
+    }
+
+    /**
      * Returns the element at the specified position in this list.
      * @param {number} index desired index.
      * @return {*} the element at the given index or undefined if the index is
